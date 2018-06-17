@@ -1,0 +1,116 @@
+.videos {
+  background: rgb(30, 30, 30);
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 15px;
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .player {
+    max-width: 80vw;
+  }
+  .player-footer {
+    background:rgb(37, 192, 158);
+    border-top: 5px solid rgb(18, 124, 84);
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .player-footer-image {
+      height: 64px;
+    }
+    .player-footer-meta {
+      margin-left: 15px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+      padding: .5rem;
+      h2 {
+        font-size: 1.3rem;
+      }
+      .player-footer-meta-lower {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .player-footer-game,
+      .player-footer-uptime,
+      .player-footer-viewers,
+      .player-footer-hype {
+        color: rgb(0, 90, 102);
+        display: flex;
+        align-items: center;
+        span {
+          margin-left: 5px;
+        }
+      }
+      .player-footer-viewers {
+        color: rgb(204, 0, 0);
+      }
+      .player-footer-hype {
+        transition: .5s;
+      }
+      .hype-0 {
+        color: rgb(0, 90, 102);
+      }
+      .hype-25 {
+        color: rgb(0, 53, 102);
+      }
+      .hype-50 {
+        color: rgb(61, 0, 102);
+      }
+      .hype-75 {
+        color: rgb(35, 94, 1);
+      }
+      .hype-100 {
+        font-weight: bold;
+        color: rgb(21, 73, 1);
+      }
+      .hype-200 {
+        font-weight: bold;
+        color: rgb(218, 98, 0);
+        animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both infinite;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+      }
+      .hype-300 {
+        font-weight: bold;
+        color: rgb(201, 10, 10);
+        animation: shake 0.2s cubic-bezier(.36,.07,.19,.97) both infinite;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+        font-size:1.4rem;
+      }
+    }
+  }
+}
+
+.spinner {
+  background: rgb(222, 0, 252);
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

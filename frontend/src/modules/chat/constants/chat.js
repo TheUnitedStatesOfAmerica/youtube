@@ -1,0 +1,6 @@
+export const CHAT_FETCH_REQUESTED = 'chat/FETCH_REQUESTED';
+export const CHAT_MESSAGES_RECEIVED = 'chat/MESSAGES_RECEIVED';
+export const CHAT_IS_ACTIVE = 'chat/IS_ACTIVE';
+export const HYPE_RECEIVED = 'chat/HYPE_RECEIVED';
+export const VIEWERS_RECEIVED = 'chat/VIEWERS_RECEIVED';
+export const CHAT_SEND_MESSAGE = 'chat/CHAT_SEND_MESSAGE';

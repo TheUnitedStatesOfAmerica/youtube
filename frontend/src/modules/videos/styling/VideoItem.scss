@@ -1,0 +1,33 @@
+.video-item {
+  width: 300px;
+  background: rgba(0,0,0,0.2);
+  margin: 15px;
+  padding: 0 15px 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-bottom: rgb(37, 192, 158) 3px solid;
+  img {
+    width: 300px;
+  }
+  h2 {
+    margin-top: 5px;
+    font-size: 8rem;
+    font-weight: normal;
+    color:white;
+  }
+  h3 {
+    font-size: .8rem;
+    font-weight: normal;
+    color: rgb(37, 192, 158);
+    align-self: flex-end;
+  }
+  .video-item-info {
+    width: 100%;
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
